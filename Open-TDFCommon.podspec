@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'Open-TDFCommon-0.0.1-test/TDFCommon.framework'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   spec.libraries    = "c++"
-  spec.public_header_files = 'Open-TDFCommon-0.0.1-test/TDFCommon.frameworkHeaders/**/*.h'
-  spec.source_files = 'Open-TDFCommon-0.0.1-test/TDFCommon.frameworkHeaders/**/*.h'
+  spec.public_header_files = 'Open-TDFCommon-0.0.1-test/TDFCommon.framework/**/*.h'
+  spec.source_files = 'Open-TDFCommon-0.0.1-test/TDFCommon.framework/**/*.h'
 end
