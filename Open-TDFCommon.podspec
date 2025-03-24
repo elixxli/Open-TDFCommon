@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "jonasluo" => "jonasluo@tencent.com" }
   spec.platform     = :ios, "9.0"
   spec.source       = { :http => "https://github.com/elixxli/Open-TDFCommon/archive/refs/tags/0.0.1-test.zip" }
-  spec.vendored_frameworks = 'Open-TDFCommon-0.0.1-test/Kuikly-TDFCommon.framework'
+  spec.vendored_frameworks = 'Open-TDFCommon-0.0.1-test/TDFCommon.framework'
 
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
