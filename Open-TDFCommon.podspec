@@ -19,5 +19,4 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   spec.libraries    = "c++"
   spec.public_header_files = 'Open-TDFCommon.framework/**/*.h'
-  spec.source_files = 'Open-TDFCommon.framework/**/*.h'
 end
