@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Open-TDFCommon"
-  spec.version      = "0.0.3-test"
+  spec.version      = "0.0.4-test"
   spec.summary      = "Supports Module ecosystem reuse for Kuikly and Hippy."
   spec.description  = <<-DESC
                     - tdf 公共代码库
@@ -10,15 +10,15 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://kuikly.tds.qq.com/"
-  spec.license      = { :type => "Apache", :file => "Open-TDFCommon-0.0.3-test/LICENSE" }
+  spec.license      = { :type => "Apache", :file => "Open-TDFCommon-0.0.4-test/LICENSE" }
 
   spec.author             = { "jonasluo" => "jonasluo@tencent.com" }
   spec.platform     = :ios, "9.0"
-  spec.source       = { :http => "https://github.com/elixxli/Open-TDFCommon/archive/refs/tags/0.0.3-test.zip" }
-  spec.vendored_frameworks = 'Open-TDFCommon-0.0.3-test/TDFCommon.framework'
+  spec.source       = { :http => "https://github.com/elixxli/Open-TDFCommon/archive/refs/tags/0.0.4-test.zip" }
+  spec.vendored_frameworks = 'Open-TDFCommon-0.0.4-test/TDFCommon.framework'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.libraries    = "c++"
-  spec.public_header_files = 'Open-TDFCommon-0.0.3-test/TDFCommon.framework/**/*.h'
-  spec.source_files = 'Open-TDFCommon-0.0.3-test/TDFCommon.framework/**/*.h'
+  spec.public_header_files = 'Open-TDFCommon-0.0.4-test/TDFCommon.framework/**/*.h'
+  spec.source_files = 'Open-TDFCommon-0.0.4-test/TDFCommon.framework/**/*.h'
 end
