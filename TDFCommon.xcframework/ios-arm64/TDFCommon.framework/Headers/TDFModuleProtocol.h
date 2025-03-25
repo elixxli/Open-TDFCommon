@@ -81,6 +81,7 @@ typedef NS_ENUM(NSInteger, TDFNullability) {
 
 
 @protocol TDFModuleProtocol <NSObject>
+@optional
 
 /*
  * @brief methodQueue 当前Module的异步方法调用，框架会自动切换到该线程执行;同步方法默认在kotlin/js线程执行；
@@ -190,8 +191,6 @@ TDF_EXTERN_C_END
     NSString *sig = @ #method; \
     sig = [sig stringByReplacingOccurrencesOfString:@"TDFModuleSuccessCallback" withString:@"HippyPromiseResolveBlock"]; \
     sig = [sig stringByReplacingOccurrencesOfString:@"TDFModuleErrorCallback" withString:@"HippyPromiseRejectBlock"]; \
-    sig = [sig stringByReplacingOccurrencesOfString:@"TDFModuleResponseSenderBlock" withString:@"HippyResponseSenderBlock"]; \
-    sig = [sig stringByReplacingOccurrencesOfString:@"TDFModuleResponseErrorBlock" withString:@"HippyResponseErrorBlock"]; \
     return @[@ #js_name, sig]; \
 }
 

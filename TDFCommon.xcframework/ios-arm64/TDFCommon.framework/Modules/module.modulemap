@@ -1,0 +1,6 @@
+framework module TDFCommon {
+  umbrella header "TDFCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}
